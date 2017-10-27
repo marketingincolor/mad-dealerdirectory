@@ -25,7 +25,7 @@ get_header('madico');
                     'posts_per_page' => -1,
                     'offset' => 0,
                     'category' => '',
-                    'orderby' => 'title',
+                    'orderby' => 'date',
                     'order' => 'ASC',
                     'post_type' => 'home_slider',
                     'post_mime_type' => '',
@@ -151,6 +151,17 @@ get_header('madico');
                         <p><a href="http://sunscapefilms.com" target="_blank" class="more-btn">Learn More</a><br class="hidden-md"><br class="hidden-md"></p>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="hidden-md hidden-lg col-sm-12 pad-zero vcenter"><img class="img-full" src="<?php echo get_template_directory_uri(); ?>/images/home-clearplex-img.jpg" /></div>
+                <div class="col-sm-12 col-md-6 content-parent vcenter">
+                    <div class="content">
+                        <p><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/home-clearplex-logo.png" /></p>
+                        <p>Driving on today's highways can be hazardous, especially to your windshield. ClearPlex<sup>&reg;</sup> Windshield Protection Film by Madico is a premium optically-clear protection film for vehicle windshields. It absorbs the impact of standard road hazards, significantly reducing the occurance of rock chips, stars, pitting, and bull's eyes&mdash;leaving the glass in pristine condition.</p>
+                        <p><a href="http://clearplex.com" target="_blank" class="more-btn">Learn More</a><br class="hidden-md"><br class="hidden-md"></p>
+                    </div>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-6 pad-zero vcenter"><img class="img-full" src="<?php echo get_template_directory_uri(); ?>/images/home-clearplex-img.jpg" /></div>
             </div>
         </div>
     </div>
