@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+.import-button {
+    background-color: #21759B;
+    background-image: linear-gradient(to bottom, #2A95C5, #21759B);
+    border-color: #21759B #21759B #1E6A8D;
+    box-shadow: 0 1px 0 rgba(120, 200, 230, 0.5) inset;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	width:70px;
+	border-radius:10px 10px 10px 10px;
+}
+input[type="file"], select {
+    border-color: #DFDFDF;
+}

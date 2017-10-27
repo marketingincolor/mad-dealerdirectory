@@ -1,0 +1,1454 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jul 15, 2016, 4:27:40 PM
+    Author     : FSSD
+*/
+div.wpcf7-validation-errors{
+    border:none;
+}
+/*Reset CSS*/
+ul{
+    margin: 0;
+    padding:0;
+}
+li{
+    list-style: none;
+}
+a:focus{
+    text-decoration: none;
+    outline:none;
+    outline: 0px -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+a:active{
+    text-decoration: none;
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #e1e6ec;
+}
+a:hover{
+    text-decoration: none;
+}
+h2{
+    font-weight: bold;
+    font-size: 22px;
+}
+.row-height-20{
+    height:20px;
+}
+.row-height-30{
+    height:30px;
+}
+
+/* Common button styles */
+.button {
+    float: left;
+    display: block;
+    margin: 0 0 1em 0;
+    border: none;
+    background: none;
+    color: inherit;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+}
+.button:focus {
+    outline: none;
+}
+/* fsp style*/
+.button.button--fsp {
+    background: #093c71;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 10px 25px 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}
+
+.button--fsp:hover {
+    color: #fff;
+    background: #356793;
+}
+.button.button_fsp {
+    background: #093c71;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 10px 25px 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    border:none;
+}
+
+.button_fsp:hover {
+    color: #fff;
+    background: #356793;
+}
+
+/*Light blue button*/
+.lightblue-btn .button.button--fsp {
+    background: #e1e6ec;
+    color:#093c71;
+}
+.lightblue-btn .button--fsp:hover {
+    color: #fff;
+    background: #093c71;
+    text-decoration: none;
+}
+
+.contact-dealer .button--fsp:hover {
+    color:#093c71;
+    background: #e1e6ec;
+}
+/* Common button styles ends here*/
+
+/*header css starts here*/
+.header-container{
+    position: relative;
+    overflow: hidden;
+    height: 141px;
+}
+.header-bg::before {
+    background: #093c71 none repeat scroll 0% 0%;
+    content: "";
+    display: block;
+    height: 141px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 50%;
+    z-index: 1;
+}
+.header-bg::after {
+    background: #356793 none repeat scroll 0% 0%;
+    content: "";
+    display: block;
+    height: 141px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 50%;
+    z-index: 1;
+}
+.inner-header-bg{
+    background: rgba(0, 0, 0, 0) url("../images/madico-header-bg.png") no-repeat scroll 65% 0px;
+    height: 141px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+}
+.inner-header{
+    padding: 37px 0;
+    overflow: hidden;
+}
+.branding{
+    float: left;
+}
+.branding .hlogo{
+    float: left;
+}
+.htext {
+    float: left;
+    padding-left: 10px;
+}
+.htext h4{
+    text-align: left;
+    border-left: 1px solid #a8bacd;
+    padding-left: 0.45em;
+    padding: 7px 6px 7px 13px;
+    color: #ffffff;
+    font-size: 26px;
+    margin: 0;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+@media (max-width: 991px) {
+    .branding{
+        text-align: center;
+        float: none;
+        width: 246px;
+        margin: 0 auto;
+    }
+    .htext {
+        padding: 0 6px;
+    }
+    .htext h4{
+        font-size: 16px;
+        line-height: 18px;
+        padding:0 0 0 0.45em;
+    }
+}
+/*header css ends here*/
+
+/*footer css starts here*/
+.footer{
+    background: #5f5f5f;
+    padding: 50px 0;
+    text-align: center;
+}
+.footer-top-links ul li{
+    display: inline-block;
+    border-right: 1px solid #fff;
+    padding: 0 10px 0 8px;
+    line-height: 14px;
+}
+.footer-top-links ul li:first-child{
+    padding-left: 0px;
+}
+.footer-top-links ul li:last-child{
+    padding-right: 0px;
+    border: 0 none;
+}
+.footer-top-links ul li a{
+    color:#fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+.footer-bottom-img{
+    padding: 50px 0;
+    overflow: hidden;
+}
+.footer-bottom-img ul li{
+    display: inline-block;
+    padding: 0 14px 0 12px;
+}
+.footer-bottom-img ul li:first-child{
+    padding-left: 0px;
+}
+.footer-bottom-img ul li:last-child{
+    padding-right: 0px;
+}
+.footer-bottom p{
+    color:#fff;
+    font-size: 12px;
+}
+@media (max-width: 767px) {
+    .footer-top-links ul li{
+        display:list-item;
+        border: 0 none;
+        line-height: 40px;
+        padding:0px;
+    }
+    .footer-top-links ul li a{
+        font-size: 16px;
+    }
+    .footer-bottom-img ul li{
+        padding: 0 14px 30px 12px;
+    }
+    .footer-bottom-img ul li:last-child{
+        padding-right: 14px;
+    }
+    .footer-bottom p {
+        color: #fff;
+        font-size: 12px;
+    }
+}
+/*footer css ends here*/
+
+
+/*Homepage css starts here*/
+.homepage-container{
+    position: relative;
+}
+.img-full { width:100%; }
+.pad-zero { padding:0 !important; }
+.content { margin:0em 2.5em; font-size:16px; line-height:1.625; }
+.more-btn { background-color:#053a6f; text-transform:uppercase; border-radius:50px; padding:10px 20px; margin-top:10px; font-weight:bold; text-align:center; display:inline-block; }
+.more-btn, .more-btn:hover { color:#fff; }
+.vcenter { display: inline-block;  vertical-align: middle; float: none; }
+
+@media (max-width: 767px) {
+    .more-btn { font-size:14px; }
+}
+
+.carousel-inner { background-color:#333333; }
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 0.5;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 0.5;
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 0.5;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.item:nth-child(1) {
+    background: url("../images/Home-backgrounds-2.jpg") no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.item:nth-child(2) {
+    background: url("../images/Home-backgrounds-1.jpg") no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.item:nth-child(3) {
+    background: url("../images/Home-backgrounds-3.jpg") no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.carousel {
+    z-index:9;
+}
+.carousel .item {
+    width: 100%;
+    height: 657px;
+}
+
+.txt-blk-container{
+    position: absolute;
+    top: -40%;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 180px;
+    width: 80%;
+    max-width: 100%;
+    text-align:center;
+}
+
+@media (max-width: 991px) {
+    .txt-blk-container{ top:-65%; width:95%; }
+    .txt-blk h3 { font-size:18px; font-weight:500; margin:0.5em 1.5em; }
+    .carousel .item { height:720px; }
+}
+@media (max-width:640px) {
+    .carousel .item { height:950px; }
+    .txt-blk-container{ top:-80%; width:95%; }
+    .txt-blk { margin-top:25% !important; }
+}
+
+.txt-blk {
+    color:#fff;
+    text-align:center;
+    width:90%;
+    margin:auto;
+}
+.txt-blk h2 { font-size:42px; font-weight:300; margin:0; }
+.txt-blk h3 { line-height:1.45; font-size:20px; }
+
+.search-blk-container{
+    position: absolute;
+    top: 25%;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 180px;
+    width: 940px;
+    max-width: 940px;
+}
+
+.search-blk{
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+.searchby{
+    background:rgba(255,255,255,0.8);
+    padding: 15px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius:40px;
+    max-width: 281px;
+    margin:0px auto 40px;
+}
+.search-type{
+    background:rgba(255,255,255,0.8);
+    padding: 15px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius:40px;
+    overflow: hidden;
+}
+.search-type ul li{
+    float: left;
+    padding-right: 24px;
+}
+.search-type ul li.last-blk{
+    padding-right: 0px;
+}
+.search-type ul li select{
+    width: 250px;
+}
+.search-type ul li input{
+    width: 250px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    height: 40px;
+    padding: 8px 14px;
+    outline: 0 none;
+}
+.search-type .button{
+    margin: 0;
+    border: 2px solid #d9d9d9;
+}
+.search-type .button.button_fsp{
+    padding: 8px 18px 6px;
+}
+.search-type span{
+    background: url("../images/go-arrow.png") no-repeat right 40%;
+    display: block;
+    padding-right: 23px;
+    font-size: 16px;
+}
+
+@media (max-width: 991px) {
+    .search-blk-container{
+        height: 496px;
+        max-width: 100%;
+    }
+    .search-blk {
+        height: 100%;
+        padding: 0 15px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    .search-type{
+        background: none;
+        padding: 0;
+    }
+    .searchby{
+        max-width: 400px;
+        margin:0px auto;
+    }
+    .search-type ul li{
+        background:rgba(255,255,255,0.8);
+        float: none;
+        padding: 15px;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius:40px;
+        max-width: 400px;
+        margin:25px auto;
+    }
+
+    .searchby select, .search-type ul li select, .search-type ul li input{
+        width: 100%;
+        height: 50px;
+    }
+    .search-type ul li.last-blk {
+        float: none;
+        overflow: hidden;
+        width: 118px;
+        padding-right: 15px;
+    }
+}
+
+/*Result page starts here*/
+.legend{
+    background: #a6abb3;
+    text-align: center;
+}
+.legend h4{
+    color:#d8d8d8;
+    text-transform:uppercase;
+}
+.legend ul li {
+    display: inline-block;
+    padding: 0 10px 10px 10px;
+    color:#fff;
+}
+.legend ul li img{
+    vertical-align:  text-bottom;
+}
+.legend ul li a span {
+    display: inline-block;
+    padding-left: 12px;
+}
+.legend ul li a {
+    color:#fff;
+    font-size: 14px;
+    font-weight: normal;
+    display: inline-block;
+}
+.dealer-result-row ul{
+    overflow: hidden;
+}
+.dealer-result-row ul li{
+    overflow: hidden;
+    border-top:1px solid #e1e6ec;
+    padding-bottom: 20px;
+}
+.dealer-result-row ul li:nth-child(-n+3){
+    border-top: 0 none;
+}
+.address-title h2{
+    margin-bottom: 3px;
+    padding-top: 10px;
+    min-height: 34px;
+}
+.address-title h2 a{
+    color: #000;
+}
+.brand_imgs{
+    min-height: 20px;
+}
+.address h4, .result-social-media h4{
+    margin: 0;
+    color:#356793;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+.address p, .result-social-media p{
+    margin: 0;
+    font-size: 16px;
+}
+.address p{
+    min-height: 22px;
+}
+p.address_content{
+    min-height: 44px;
+}
+.result-social-media{
+    padding-bottom: 20px;
+}
+.social_links{
+    min-height: 27px;
+    height: auto !important;
+    height: 27px;
+}
+.result-social-media i{
+    font-size: 22px;
+    margin-right: 5px;
+    padding-top: 2px;
+    color:#3d3d3d;
+}
+@media (max-width: 991px) {
+    .dealer-result-row ul li:nth-child(-n+3){
+        border-top:1px solid #e1e6ec;
+    }
+
+}
+@media (max-width: 767px) {
+    .legend ul li {
+        padding: 0 7px 10px;
+    }
+    .legend ul li span{
+        display: block;
+        padding:5px 0 0;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+.show-all-blk{
+    width: 250px;
+    overflow: hidden;
+    margin:30px auto;
+}
+.three-dot{
+    float:left;
+    padding-right: 20px;
+}
+.three-dot i{
+    padding:0 1px;
+}
+.three-dot .lightblue-btn .button.button--fsp{
+    padding: 10px 35px 8px;
+}
+.three-dot .lightblue-btn .button.button--fsp:hover{
+    background: #093c71;
+    color:#fff;
+}
+/*Result page ends here*/
+
+
+/*Contact page starts here*/
+.contact-us-container{
+    padding-bottom: 25px;
+}
+.contact-us-form{
+    max-width: 767px;
+    margin: 0 auto;
+}
+h2.md-title{
+    padding-bottom: 10px;
+}
+.contact-us-blk-container p{
+    font-weight: bold;
+    font-size: 16px;
+    padding-top:15px;
+}
+.contact-us-form h4{
+    color:#969696;
+    line-height: 27px;
+}
+.contact-field{
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.form-check-blk{
+    padding-bottom: 15px;
+}
+.comments-blk{
+    padding-bottom: 25px;
+}
+
+/*Custom Input and radio css starts here*/
+input[type="checkbox"], input[type="radio"] {
+    display: none;
+}
+input[type="checkbox"] + label span {
+    float: left;
+    width: 17px;
+    color: #555 !important;
+    height: 17px;
+    margin: 2px 6px 0 0;
+    vertical-align: middle;
+    background: url(../images/checkbox-radio.png) left top no-repeat;
+    cursor: pointer;
+}
+input[type="radio"] + label span {
+    float: left;
+    width: 16px;
+    color: #555 !important;
+    height: 17px;
+    margin: 2px 6px 0 0;
+    vertical-align: middle;
+    background: url(../images/checkbox-radio.png) left top no-repeat;
+    cursor: pointer;
+}
+input[type="checkbox"] + label span {
+    background: url(../images/checkbox-radio.png) left top no-repeat;
+}
+input[type="checkbox"]:checked + label span {
+    background: url(../images/checkbox-radio.png) -17px top no-repeat;
+}
+input[type="radio"]:disabled + label span {
+    background: url(../images/checkbox-radio.png) left top no-repeat;
+    opacity: 0.5;
+}
+input[type="radio"] + label span {
+    background: url(../images/checkbox-radio.png) -34px top no-repeat;
+}
+input[type="radio"]:checked + label span {
+    background: url(../images/checkbox-radio.png) -48px top no-repeat;
+}
+input[type="checkbox"]:disabled + label span {
+    background: url(../images/checkbox-radio.png) -32px top no-repeat;
+    opacity: 0.5;
+}
+.checkbox + .checkbox, .radio + .radio {
+    margin-top: -2px;
+}
+.checkbox label, .radio label {
+    padding-left: 0;
+    padding-right: 15px;
+}
+/*Custom Input and radio css ends here*/
+
+/*Custom select starts here*/
+select {
+    background: #fff url("../images/select_drop.png") no-repeat scroll 95% 50%;
+    color: #555555 !important;
+    cursor: pointer;
+    display: block;
+    font-size: 12.7px;
+    height: 40px;
+    padding: 8px 15px;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    border: 2px solid #d9d9d9;
+}
+select::-ms-expand {
+    display: none;
+}
+select:focus{
+    outline: none;
+    border: 2px solid #356793;
+}
+input{
+    border: 2px solid #d9d9d9;
+}
+input:focus {
+    border: 2px solid #356793;
+}
+input::-webkit-input-placeholder {
+    color: #555555;
+    opacity: 1;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #555555;
+    opacity: 1;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: #555555;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder {
+    color: #555555;
+    opacity: 1;
+}
+select option {
+    color: #337ab7 !important;
+    padding: 3px 3px 4px;
+}
+/*Custom select ends here*/
+
+.consumer .checkbox {
+    background: #e1e6ec;
+    padding:10px 15px;
+    color: #3d3d3d;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    border: 2px solid #d9d9d9;
+    margin-bottom: 0px;
+}
+.consumer .checkbox label{
+    font-weight: bold;
+    width: 100%;
+}
+.professional .checkbox {
+    background: #e1e6ec;
+    padding:10px 15px;
+    color: #3d3d3d;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    border: 2px solid #d9d9d9;
+    margin-bottom: 0px;
+}
+.professional .checkbox label{
+    font-weight: bold;
+    width: 100%;
+}
+.contact-active {
+    background: #356793 !important;
+    border: 2px solid #356793 !important;
+    color:#fff !important;
+}
+.contact-form-blk{
+    width: 80%;
+}
+.contact-form-blk ul li {
+    padding-bottom: 20px;
+}
+.contact-form-blk ul li input{
+    border: 2px solid #d9d9d9;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    font-size: 14px;
+    height: 40px;
+    padding: 8px 15px;
+}
+.form-control:focus {
+    border-color: #356793;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.contact-form-blk li input::-webkit-input-placeholder {
+    color: #555555;
+}
+
+.contact-form-blk li input:-moz-placeholder { /* Firefox 18- */
+    color: #555555;
+}
+
+.contact-form-blk li input::-moz-placeholder {  /* Firefox 19+ */
+    color: #555555;
+}
+
+.contact-form-blk li input:-ms-input-placeholder {
+    color: #555555;
+}
+.comments-blk textarea{
+    border: 2px solid #d9d9d9;
+    -webkit-border-radius: 20px;
+    -moz-border-radius:20px;
+    border-radius: 20px;
+}
+@media (max-width: 991px) {
+    .contact-form-blk{
+        width: 88%;
+    }
+    .col-sm-pull-left{
+        padding-left: 25px;
+    }
+    .col-sm-pull-right{
+        padding-right: 25px;
+    }
+}
+@media (max-width: 767px) {
+    .contact-form-blk{
+        width: 100%;
+    }
+    .contact-field{
+        padding-top: 0px;
+    }
+    .checkbox{
+        padding: 10px 0;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .form-check-blk .checkbox label {
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+    .col-sm-pull-left{
+        padding-left: 0px;
+    }
+    .col-sm-pull-right{
+        padding-right: 0px;
+    }
+    .form-check-blk{
+        padding-bottom: 0px;
+    }
+    .contact-field {
+        padding-bottom: 0px;
+    }
+}
+/*Contact page ends here*/
+
+/*Listing page*/
+.contact-dealer{
+    background: #356793;
+    padding:30px;
+    overflow: hidden;
+}
+.contact-dealer h1{
+    margin: 0 0 30px;
+    color:#ffffff;
+}
+.contact-dealer ul li{
+    padding-bottom: 20px;
+}
+.contact-dealer input{
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}
+.contact-dealer .form-control{
+    height: 40px;
+    padding: 8px 20px;
+}
+.contact-dealer textarea.form-control {
+    height: auto;
+}
+.contact-dealer .comments-blk {
+    padding-bottom: 0px;
+}
+.dealer-listing{
+    padding: 20px 0 0px;
+    overflow: hidden;
+}
+.dealer-address ul{
+    padding: 40px 0 0;
+}
+.dealer-address ul li{
+    margin-bottom:35px
+}
+.dealer-address ul li.city_address{
+    padding-left:45px;
+}
+.dealer-address ul li.dealer-phone{
+    padding-left:45px;
+    line-height: 31px;
+}
+.dealer-address ul li.dealer-email{
+    padding-left:45px;
+    line-height: 23px;
+}
+.dealer-address ul li.dealer-website{
+    padding-left:45px;
+    line-height: 35px;
+}
+.dealer-listing .result-social-media i {
+    font-size: 34px;
+    margin-right: 12px;
+    padding-top: 2px;
+    color: #356793;
+}
+.dealer-address a{
+    color: #333333;
+}
+.dealer-address a:hover{
+    color: #093c71;
+}
+.sprite {
+    background: url("../images/dealer_sprite.png") no-repeat;
+}
+.city_address {
+    background-position: -8px -2px;
+}
+.dealer-phone {
+    background-position: -5px -146px;
+}
+.dealer-email {
+    background-position: -2px -192px;
+}
+.dealer-website {
+    background-position: -3px -228px;
+}
+.clear{
+    clear:both;
+}
+@media (max-width: 767px) {
+    .result-mediacontainer{
+        display: table;
+        margin: 0 auto;
+    }
+    .dealer-address ul{
+        max-width: 500px;
+        margin: 0 auto;
+        width: 265px;
+    }
+    .city_address {
+        background-position: -2px -2px;
+    }
+    .dealer-phone {
+        background-position: -2px -146px;
+    }
+}
+.share-page-container{
+    background: #e1e6ec;
+    overflow: hidden;
+}
+.share-page{
+    padding: 20px 0;
+    overflow: hidden;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.share-page h2.md-title {
+    float: left;
+    padding: 0px 20px 0 0;
+    margin:0px;
+}
+.share-page ul li{
+    float: left;
+    padding: 0 8px;
+}
+.dealer-listing form{
+    margin: 0;
+}
+.addtoany_list a {
+    padding: 0 8px !important;
+}
+@media (max-width: 1024px) {
+    .share-page h2.md-title {
+        float: none;
+        text-align: center;
+        padding: 0px 0px 20px;
+    }
+    .share-page ul {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 767px) {
+    .mobile-padding{
+        padding-left:0px;
+        padding-right: 0px;
+    }
+    .share-page{
+        max-width: 100%;
+    }
+    .share-page h2.md-title {
+        text-align: left;
+        float: none;
+        width:100%;
+        padding: 0px 0px 5px;
+    }
+    .share-page ul {
+        padding-top: 10px;
+        overflow: hidden;
+        width: 100%;
+    }
+    .share-page ul li {
+        float: left;
+        padding: 0 16px 0 0px;
+    }
+    .share-page ul li.last {
+        padding:0px;
+    }
+    .contact-dealer {
+        padding: 30px 15px;
+    }
+    .dealer-listing {
+        padding: 20px 0 0;
+    }
+    .addtoany_list a:first-child {
+        padding-left:0px !important;
+    }
+    .addtoany_list a:nth-child(4) {
+        padding-right:0px !important;
+    }
+
+}
+.bottom-slider{
+    background: #e1e6ec;
+    position: relative;
+    /*padding: 15px;*/
+}
+.madico-slider-btn{
+    background: transparent;
+    outline: none;
+    border: 0 none;
+    width: 100%;
+    color: #444444;
+    font-weight: 600;
+    font-size: 13px;
+}
+.modal{
+    top:20%;
+}
+.modal-body {
+    padding-top: 5px;
+}
+.modal-content-outer{
+    background:rgba(255,255,255,0.8);
+    padding: 15px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius:40px;
+}
+.modal-content{
+    padding:15px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius:30px;
+    box-shadow: none;
+    border: 0 none;
+}
+.modal-header{
+    border:0 none;
+    padding-bottom: 0px;
+}
+.modal-content-outer .close{
+    position: relative;
+    top: -20px;
+    right: -9px;
+    font-size: 38px;
+    color: #7f7f7f;
+    opacity: 1;
+}
+@media (min-width: 768px){
+    .modal-sm {
+        width: 360px;
+    }
+}
+
+/*404 page css starts here*/
+.oops-page-container {
+    background: url(../images/404-bg.jpg) no-repeat;
+    background-size: cover;
+}
+.oops-cont{
+    max-width: 555px;
+    margin: 0 auto;
+    text-align: center;
+}
+.oops-msg{
+    overflow: hidden;
+    padding: 65px 0 25px;
+}
+.oops-cont h3{
+    float: left;
+    font-size: 80px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+.oops-cont h4{
+    color: #093c71;
+    font-size: 28px;
+    font-weight: 600;
+    float: left;
+    padding: 12px 0px 0px 20px;
+}
+.oops-cont h4 span{
+    display: block;
+    color: #3d3d3d;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.oops-search-blk-container{
+    padding:60px 0;
+}
+.oops-search-blk-container .searchby{
+    margin: 0px auto 30px;
+}
+.oops-search-blk-container .search-type{
+    background: none;
+    border-radius: 0px;
+}
+@media (max-width: 991px) {
+    .oops-cont h3{
+        float: none;
+    }
+    .oops-cont h4{
+        float: none;
+        padding: 12px 0px 0px 0px;
+    }
+    .oops-search-blk-container{
+        display: table;
+        width: 100%;
+    }
+    .oops-search-blk-container .search-type ul li{
+        background: none;
+        max-width: 500px;
+        border-radius: 0px;
+    }
+    .oops-search-blk-container .searchby{
+        margin: 0 auto;
+        max-width: 500px;
+        border-radius: 0px;
+    }
+    .oops-search-blk-container .searchby select, .oops-search-blk-container .search-type ul li select{
+        height: 70px;
+        padding: 8px 25px;
+        font-size: 23px;
+    }
+    .oops-search-blk-container .search-type span{
+        font-size: 23px;
+    }
+    .oops-search-blk-container .search-type span {
+        background: rgba(0, 0, 0, 0) url("../images/go-arrow-large.png") no-repeat scroll right 40%;
+        padding-right: 40px;
+    }
+    .oops-search-blk-container .search-type ul li.last-blk {
+        width: 120px;
+        padding: 0;
+    }
+}
+@media (max-width: 480px) {
+    .oops-search-blk-container {
+        padding: 40px 0;
+    }
+    .oops-search-blk-container .searchby select, .oops-search-blk-container .search-type ul li select{
+        font-size: 15px;
+        height: 50px;
+        padding: 8px 16px;
+    }
+    .oops-search-blk-container .search-type span{
+        font-size: 18px;
+    }
+    .oops-search-blk-container .search-type ul li{
+        background: none;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .oops-search-blk-container .search-type span {
+        background: rgba(0, 0, 0, 0) url("../images/go-arrow.png") no-repeat scroll right 50%;
+        padding-right: 23px;
+    }
+    .oops-search-blk-container .search-type ul li.last-blk {
+        margin-top: 15px;
+        width: 94px;
+    }
+    .legend ul li a span {
+    display: block;
+    padding-left: 0;
+    text-align: center;
+    }
+}
+/*404 page css ends here*/
+
+.success-container h2{
+    text-align: center;
+    padding: 20px 0;
+}
+.success-msg p{
+    text-align: center;
+    padding:70px 0;
+    font-size: 18px;
+}
+.contact-madico-container{
+    background: #ffffff;
+    border:1px solid #e1e6ec;
+    margin-bottom: 70px;
+}
+.contact-madico{
+    padding: 40px 40px 20px ;
+    overflow: hidden;
+}
+.contact-madico h2{
+    text-align: center;
+    margin: 0;
+    padding: 3px 0px 30px 0;
+}
+.contact-madico ul{
+    margin: 0 auto;
+    max-width: 665px;
+    overflow: hidden;
+}
+.contact-madico ul li {
+    float: left;
+    min-height: 50px;
+    padding: 15px;
+}
+@media (max-width: 768px) {
+    .contact-madico ul{
+        max-width: 625px;
+    }
+    .contact-madico ul li {
+        padding: 10px;
+    }
+}
+@media (max-width: 400px) {
+    .contact-madico{
+        padding: 40px 20px 20px ;
+        overflow: hidden;
+    }
+}
+
+/*To hide button in home page and result page*/
+.displayhidden{
+    display: none;
+}
+
+.zipcode{
+    display: none;
+}
+
+.post_value{
+    display: none;
+}
+
+/* To display the status message in contact dealer page */
+#statusMessage {
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 0 0 0 116px;
+}
+.successEmail i, .failEmail i{
+    padding-right: 6px;
+}
+
+/* To display the loader icon in contact dealer page */
+#spinLoader {
+    margin: 10px 0px 0px 10px;
+    display: inline-block;
+}
+
+.displayhidden{
+    display: none;
+}
+
+.zipcode{
+    display: none;
+}
+
+.post_value{
+    display: none;
+}
+
+.hidden_inputs{
+    padding: 10px 0px;
+}
+
+#back-top {
+    position: fixed;
+    bottom: 50px;
+    margin-right: 20px;
+    right: 0px;
+    z-index: 1000;
+}
+
+#back-top a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #093C71;
+}
+#back-top i{
+    font-size: 29px;
+    border-radius: 100%;
+    background: #093c71;
+    color:#ffffff;
+    padding: 10px;
+}
+
+#back-top a:hover {
+    color: #000;
+}
+.error{
+    border: 2px solid #d3171d !important;
+}
+label .error{
+    border: 0 none;
+}
+#no_result{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.validation-box label.error{
+    border:1px solid #d3171d;
+    background: #fbf5f7;
+    color: #d3171d;
+    padding: 10px 15px 10px;
+    margin-bottom: 15px;
+    display: none;
+    width: 100%;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}
+.validation-box label.error:before{
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f00d";
+    padding-right: 5px;
+}
+.validation-box i{
+    color: #d3171d;
+}
+.validation-text label.error{
+    display: none;
+    border: 0 none !important;
+    font-weight: normal;
+    color: #d3171d;
+    font-size: 13px;
+}
+.dealer-address-blk img{
+    width: 100%;
+}
+.street_field{
+    display: block;
+}
+.address-title {
+    margin-bottom: 10px;
+    min-height: 85px;
+    height: auto !important;
+    height: 85px;
+}
+.address {
+    min-height: 95px;
+    height: auto !important;
+    height: 95px;
+}
+p.breadcrumb-custom {
+    background: rgba(221, 221, 221, 0.24);
+    padding: 10px 0px 11px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.zip_clear {
+    font-size:12.7px;
+}
+
+/*Default page starts here*/
+.default-container { padding-bottom: 25px; }
+.default-container p { font-size: 16px; padding-top: 15px; }
+/*Default page ends here*/
+
+/*CF7 Formatting starts here*/
+.dealer-submit-form { margin:0 auto; max-width:80%; }
+.wpcf7 { display:inline-block; }
+.wpcf7-form {}
+.wpcf7-form input { border: 2px solid #d9d9d9; box-shadow: none !important; }
+.wpcf7-form p, .wpcf7-form label { font-size: 14px; font-weight:normal; color:#767676; }
+.wpcf7-form .wpcf7-form-control-wrap {} /*span*/
+.wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control[type="text"],
+.wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control[type="email"] {
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: normal;
+    height: 40px;
+    padding: 8px 15px;
+    color:#555;
+}
+/*.wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control input[type="checkbox"] { display: initial; }*/
+.wpcf7-form input[type="checkbox"], .wpcf7-form input[type="radio"] { display: inline; }
+@media (max-width: 640px) {
+    .wpcf7-form input[type="checkbox"] { margin-top:2px; }
+}
+.wpcf7-form .contact-form-blk { margin-top:20px; }
+.wpcf7-file { font-size:14px; font-weight:normal; }
+.wpcf7-submit {
+    background: #093c71;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 10px 25px 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    border:none;
+    margin-top:10px;
+}
+.wpcf7-submit:hover { color: #fff; background: #356793; }
+.wpcf7-form-control::-moz-placeholder { color: #555 !important; }
+/*CF7 Formatting ends here*/

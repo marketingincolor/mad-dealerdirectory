@@ -1,0 +1,17 @@
+/*Admin Css*/
+
+/*Edit and delete icons on font awesome page */
+i.fa {font-size: 23px; color: #2d2d2d;}
+/* Auto Complete Search list page result*/
+ul#ui-custom-id-1 li.ui-menu-item{ padding: 5px;}
+/*Hide the list page post links */
+/*.subsubsub{ display: none; }*/
+/*hide the meta box on the add dealer page */
+div#Enable_button_box {
+    display: none;
+}
+
+/* To hide the title in dealers page*/
+/*#titlediv {
+    display:none;
+}*/
