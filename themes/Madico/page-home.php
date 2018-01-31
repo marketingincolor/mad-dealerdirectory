@@ -100,10 +100,10 @@ get_header('madico');
                             </select>
                         </li>
                         <li class="zipcode">
-                            <input type="text" class="zip_clear" id="zip_startvalue" name="zip_startvalue" placeholder="Zip Code Range Starting Value 33700">
+                            <input type="text" class="zip_clear" id="zip_startvalue" name="zip_startvalue" placeholder="Zip Code Range Starting Value (ex. 33700)">
                         </li>
                         <li class="zipcode">
-                            <input type="text" class="zip_clear" name="zip_endvalue" id="zip_endvalue" placeholder="Zip Code Range Ending Value 33800 ">
+                            <input type="text" class="zip_clear" name="zip_endvalue" id="zip_endvalue" placeholder="Zip Code Range Ending Value (ex. 33800)">
                         </li>
                         <li class="last-blk">
                                     <div class="blue-btn">
